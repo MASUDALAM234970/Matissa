@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/background_top_menu"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/assignment12"
+                android:text="Assignment Name:"
+                android:layout_margin="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/background_search"
+                android:textSize="18sp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/teachername12"
+                android:text="Teacher Name:"
+                android:background="@drawable/background_search"
+                android:paddingTop="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="2dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/coursetitle12"
+                android:text="Course Title:"
+                android:background="@drawable/background_search"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:textSize="18sp"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dept12"
+                android:text="Department:"
+                android:background="@drawable/background_search"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="2dp"
+                android:textSize="20sp"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/semester"
+                android:text="semester:"
+                android:background="@drawable/background_search"
+                android:paddingTop="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="2dp"
+                android:textSize="20sp"
+                android:padding="10dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image12"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_banner"
+                    android:scaleType="fitXY">
+
+                </ImageView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

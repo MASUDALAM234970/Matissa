@@ -1,0 +1,172 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".teacher.dash.EbookActivity">
+
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/sample"
+        >
+    </include>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+            android:layout_marginTop="100dp"
+            android:layout_margin="5dp">
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/addPdfCard"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                app:cardElevation="5dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/s_image"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/profile"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        />
+
+
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/profile_image_change_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Profile"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@+id/settings_profile_image"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/s_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/s_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ID" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/s_address"
+                    android:layout_width="match_parent"
+                    android:focusable="false"
+                    android:layout_height="wrap_content"
+                    android:hint="Address" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="match_parent">
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+              <LinearLayout
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+                  <com.google.android.material.button.MaterialButton
+                      android:id="@+id/close_button"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Close"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="30dp"
+                      android:layout_marginRight="15dp"
+                      style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                      android:backgroundTint="@color/category1"
+
+                      />
+                  <com.google.android.material.button.MaterialButton
+                      android:id="@+id/update_button"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Update"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="30dp"
+                      android:layout_marginRight="15dp"
+                      style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+                      android:backgroundTint="@color/category1"
+
+                      />
+              </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </View>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

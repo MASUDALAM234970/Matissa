@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.ComonLoginActivity">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="@color/category1"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please login with your information"
+            android:alpha="0.7"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Phone number"
+            android:alpha="0.7"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/studentphone12"
+            android:drawablePadding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:drawableStart="@drawable/phone"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:alpha="0.7"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/studentpassword11"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lock"
+             android:drawablePadding="10dp"
+            android:drawableEnd="@drawable/password"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+        <TextView
+
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/audience"
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:alpha="0.7"
+            android:textStyle="bold"
+
+            />
+
+        <Spinner
+            android:id="@+id/student_department"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/audience"
+            android:drawablePadding="10dp"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+        <TextView
+            android:drawableLeft="@drawable/schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sessions"
+            android:textAlignment="center"
+            android:alpha="0.7"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/sessions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/schedule"
+            android:focusable="false"
+            android:drawablePadding="10dp"
+            />
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/Log_checkbox12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:layout_centerVertical="true"
+                android:alpha="0.7"/>
+
+            <TextView
+                android:id="@+id/Log_forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Log_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" Student Login"
+            app:cornerRadius="32dp"/>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/teacherlogin"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+
+                android:text=" Teacher Login"
+                android:layout_gravity="center"
+                android:alpha="0.7"/>
+            <TextView
+                android:id="@+id/adminlogin"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Admin Login"
+                android:layout_gravity="center"
+                android:alpha="0.7"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

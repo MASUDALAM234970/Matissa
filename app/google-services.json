@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "160530075340",
+    "project_id": "mantissa-7165c",
+    "storage_bucket": "mantissa-7165c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160530075340:android:1218f5082ceea7ed3b7c69",
+        "android_client_info": {
+          "package_name": "com.error.mantissa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMdwtnGRXtRD0SeQf54wzrCbsqjFXWoHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

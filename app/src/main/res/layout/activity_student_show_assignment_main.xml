@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".student.Show.StudentShowAssignmentMainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_top_menu"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/background_banner"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/stAssignment"
+
+                android:nestedScrollingEnabled="false"/>
+            <Spinner
+                android:id="@+id/show1"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/background_search"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Department" />
+            <Spinner
+                android:id="@+id/show2"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/background_search"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:hint="Session" />
+            <Spinner
+                android:id="@+id/show3"
+                android:focusable="false"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/background_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Semester" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
